@@ -1,0 +1,22 @@
+{
+  "name": "devcon-auth",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.3",
+    "vite": "^5.4.8",
+    "vite-plugin-node-polyfills": "^0.22.0"
+  },
+  "dependencies": {
+    "@parcnet-js/app-connector": "^0.0.7",
+    "@parcnet-js/podspec": "^0.0.3",
+    "@parcnet-js/ticket-spec": "^0.0.4",
+    "buffer": "^6.0.3"
+  }
+}
