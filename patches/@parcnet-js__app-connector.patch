@@ -1,0 +1,26 @@
+diff --git a/dist/adapters/iframe.cjs b/dist/adapters/iframe.cjs
+index 0438cce829bbf22c76056ae06a558cbc2c21b1f2..c4f42dd1d5a098ac96d4d196730d9d9aaa10f2d4 100644
+--- a/dist/adapters/iframe.cjs
++++ b/dist/adapters/iframe.cjs
+@@ -433,7 +433,7 @@ function connect(zapp, element, clientUrl = "https://zupass.org") {
+       } else {
+         console.error("no iframe content window!");
+       }
+-    });
++    }, { once: true });
+     shadow.appendChild(iframe);
+   });
+ }
+diff --git a/dist/chunk-4EHFXXSQ.js b/dist/chunk-4EHFXXSQ.js
+index 1c4bd209d812788b54d7afc7f9ee04d690eaa1e2..b21d33812e7000c1804fc33a7b1e6f6ad8c4c0f3 100644
+--- a/dist/chunk-4EHFXXSQ.js
++++ b/dist/chunk-4EHFXXSQ.js
+@@ -99,7 +99,7 @@ function connect(zapp, element, clientUrl = "https://zupass.org") {
+       } else {
+         console.error("no iframe content window!");
+       }
+-    });
++    }, { once: true });
+     shadow.appendChild(iframe);
+   });
+ }

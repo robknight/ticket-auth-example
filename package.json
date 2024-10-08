@@ -17,5 +17,10 @@
     "@parcnet-js/app-connector": "^0.0.7",
     "@parcnet-js/ticket-spec": "^0.0.4",
     "buffer": "^6.0.3"
+  },
+  "pnpm": {
+    "patchedDependencies": {
+      "@parcnet-js/app-connector": "patches/@parcnet-js__app-connector.patch"
+    }
   }
 }
