@@ -11,9 +11,6 @@ importers:
       '@parcnet-js/app-connector':
         specifier: ^0.0.7
         version: 0.0.7(typescript@5.6.2)
-      '@parcnet-js/podspec':
-        specifier: ^0.0.3
-        version: 0.0.3
       '@parcnet-js/ticket-spec':
         specifier: ^0.0.4
         version: 0.0.4(typescript@5.6.2)
