@@ -1,7 +1,6 @@
 import { ticketProofRequest } from '@parcnet-js/ticket-spec';
 import './style.css'
 import { connect, ParcnetAPI, Zapp } from '@parcnet-js/app-connector'
-import * as p from '@parcnet-js/podspec'
 
 const myApp: Zapp = {
   name: 'Devcon Ticket Authentication',
