@@ -29,7 +29,13 @@ async function main(): Promise<void> {
         <p>Email address: ${proof.revealedClaims.pods.ticket.entries?.attendeeEmail.value}</p>
         <p>Name: ${proof.revealedClaims.pods.ticket.entries?.attendeeName.value}</p>
       `
-    } 
+    } else {
+      if (proof?.error) {
+        document.querySelector<HTMLDivElement>('#details')!.innerHTML = `
+          <p>Error: ${proof.error}</p>
+        `
+      }
+    }
   })
 }
 
