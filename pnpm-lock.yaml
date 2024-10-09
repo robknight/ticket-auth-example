@@ -4,24 +4,16 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-patchedDependencies:
-  '@parcnet-js/app-connector':
-    hash: lk6lld2elhyyg6u5swup6dejtm
-    path: patches/@parcnet-js__app-connector.patch
-
 importers:
 
   .:
     dependencies:
       '@parcnet-js/app-connector':
-        specifier: ^0.0.7
-        version: 0.0.7(patch_hash=lk6lld2elhyyg6u5swup6dejtm)(typescript@5.6.2)
+        specifier: ^1.0.0
+        version: 1.0.0(typescript@5.6.2)
       '@parcnet-js/ticket-spec':
-        specifier: ^0.0.4
-        version: 0.0.4(typescript@5.6.2)
-      buffer:
-        specifier: ^6.0.3
-        version: 6.0.3
+        specifier: ^1.0.0
+        version: 1.0.0(typescript@5.6.2)
     devDependencies:
       typescript:
         specifier: ^5.5.3
@@ -219,23 +211,17 @@ packages:
     resolution: {integrity: sha512-MVC8EAQp7MvEcm30KWENFjgR+Mkmf+D189XJTkFIlwohU5hcBbn1ZkKq7KVTi2Hme3PMGF390DaL52beVrIihQ==}
     engines: {node: '>= 16'}
 
-  '@parcnet-js/app-connector@0.0.7':
-    resolution: {integrity: sha512-nmw5gE700JsFR01ErkzUGbsE81Z+bKLMapRlw4JjptXmOLMR+o1e3eafNc9CA8M4wHJ2M6Ik2LTh1VHaOK9j0A==}
+  '@parcnet-js/app-connector@1.0.0':
+    resolution: {integrity: sha512-3AxQe9QT62UP3c9IJd/q50vwXAM7P8BEOXowBR2x2BPBaRNhdYEqhL3NChPK70yk0WSWxh8/clhRGmg3TIBYDw==}
 
-  '@parcnet-js/client-rpc@0.0.4':
-    resolution: {integrity: sha512-sY0LZdxxj4sLcTWkg4conj18cZNNKWm7+aR2aCK+zswwPlz2chA8kO0HEbHjjENkqT6oQLCpzgk/URsqoCBSNw==}
+  '@parcnet-js/client-rpc@1.0.0':
+    resolution: {integrity: sha512-eu/6xf6eZSiOgCaNC1pR8th8FJ0SULAba8Ufdm1E42XSUwC1th9gFM/1AY9aViUvz4zWT51BGPRFdkIB310pHw==}
 
-  '@parcnet-js/client-rpc@0.0.6':
-    resolution: {integrity: sha512-+MRGLOz/iI/pTZVnJcS9mXQs18s0qHWJbeknBf55nWTSPjxv5Ob6anuK56915Z89x64hjsM9Gq4mfYhKm7ZFFg==}
+  '@parcnet-js/podspec@1.0.0':
+    resolution: {integrity: sha512-ea4o1dTP4crplo/iGnWYkdXGKAaBsOMkSjNhKw0NttuEVlIqELOLXtjV2byAClFnqnmbxkmRUZr6i0s9X3VILg==}
 
-  '@parcnet-js/podspec@0.0.3':
-    resolution: {integrity: sha512-/IlXwBXEcOREFtyyMSVHz3Va7azCV5i4x6u1cuF9W0Bs3uLwkOG5ej+TceFScpB0jhdedMw/J3iY5VYaWJJtkA==}
-
-  '@parcnet-js/podspec@0.0.5':
-    resolution: {integrity: sha512-Cj0FXZmuQtlpzIhqt97EZjN2osqw8l3H94F1C9UaAE8PktJ2L44EF6m9e6Gwqg2/WOZVVLtTrL9z89GyjPEGXw==}
-
-  '@parcnet-js/ticket-spec@0.0.4':
-    resolution: {integrity: sha512-qbveFIrstojoKWRBUrB435I1JpRNqNjSX5kWho3EwmUqx0nbnNjB2XnVaxaJxAzVvHxLpIGy5KwieuVlURm3kw==}
+  '@parcnet-js/ticket-spec@1.0.0':
+    resolution: {integrity: sha512-4S9xwbSPWY15lr3dU33dMpom2jgQSe1Z8+hK9jCbLfWvNK1jo3+rp9w/cv5q/wc2VA844Zu3AOse+aTH+lkxEw==}
 
   '@pcd/gpc@0.0.8':
     resolution: {integrity: sha512-rsQZJuOB/fsq2JWZcQZv6hmr2lIX60oFlInAW6JeXyKVcro6AoOGcKHepDpHeRTG7SEze3/98jJ22X/8tMeGsw==}
@@ -1274,11 +1260,11 @@ snapshots:
 
   '@noble/hashes@1.3.2': {}
 
-  '@parcnet-js/app-connector@0.0.7(patch_hash=lk6lld2elhyyg6u5swup6dejtm)(typescript@5.6.2)':
+  '@parcnet-js/app-connector@1.0.0(typescript@5.6.2)':
     dependencies:
       '@brenoroosevelt/toast': 2.0.3
-      '@parcnet-js/client-rpc': 0.0.4(typescript@5.6.2)
-      '@parcnet-js/podspec': 0.0.3
+      '@parcnet-js/client-rpc': 1.0.0(typescript@5.6.2)
+      '@parcnet-js/podspec': 1.0.0
       '@pcd/gpc': 0.0.8
       '@pcd/pod': 0.1.7
       nanoevents: 9.0.0
@@ -1288,9 +1274,9 @@ snapshots:
       - typescript
       - utf-8-validate
 
-  '@parcnet-js/client-rpc@0.0.4(typescript@5.6.2)':
+  '@parcnet-js/client-rpc@1.0.0(typescript@5.6.2)':
     dependencies:
-      '@parcnet-js/podspec': 0.0.3
+      '@parcnet-js/podspec': 1.0.0
       '@pcd/gpc': 0.0.8
       '@pcd/pod': 0.1.7
       valibot: 0.42.1(typescript@5.6.2)
@@ -1299,18 +1285,7 @@ snapshots:
       - typescript
       - utf-8-validate
 
-  '@parcnet-js/client-rpc@0.0.6(typescript@5.6.2)':
-    dependencies:
-      '@parcnet-js/podspec': 0.0.5
-      '@pcd/gpc': 0.0.8
-      '@pcd/pod': 0.1.7
-      valibot: 0.42.1(typescript@5.6.2)
-    transitivePeerDependencies:
-      - bufferutil
-      - typescript
-      - utf-8-validate
-
-  '@parcnet-js/podspec@0.0.3':
+  '@parcnet-js/podspec@1.0.0':
     dependencies:
       '@pcd/gpc': 0.0.8
       '@pcd/pod': 0.1.7
@@ -1318,18 +1293,10 @@ snapshots:
       - bufferutil
       - utf-8-validate
 
-  '@parcnet-js/podspec@0.0.5':
+  '@parcnet-js/ticket-spec@1.0.0(typescript@5.6.2)':
     dependencies:
-      '@pcd/gpc': 0.0.8
-      '@pcd/pod': 0.1.7
-    transitivePeerDependencies:
-      - bufferutil
-      - utf-8-validate
-
-  '@parcnet-js/ticket-spec@0.0.4(typescript@5.6.2)':
-    dependencies:
-      '@parcnet-js/client-rpc': 0.0.6(typescript@5.6.2)
-      '@parcnet-js/podspec': 0.0.5
+      '@parcnet-js/client-rpc': 1.0.0(typescript@5.6.2)
+      '@parcnet-js/podspec': 1.0.0
     transitivePeerDependencies:
       - bufferutil
       - typescript

@@ -4,7 +4,9 @@ import { connect, ParcnetAPI, Zapp } from "@parcnet-js/app-connector";
 
 const myApp: Zapp = {
   name: "Devcon Ticket Authentication",
-  permissions: [],
+  permissions: {
+    REQUEST_PROOF: { collections: ["Tickets"] },
+  },
 };
 
 let z: ParcnetAPI | undefined = undefined;
@@ -14,7 +16,7 @@ async function main(): Promise<void> {
   z = await connect(
     myApp,
     document.querySelector<HTMLDivElement>("#connector")!,
-    "https://staging.zupass.org"
+    "https://zupass.org"
   );
   document
     .querySelector<HTMLButtonElement>("#authenticate")!
@@ -25,7 +27,7 @@ async function main(): Promise<void> {
       const req = ticketProofRequest({
         classificationTuples: [
           {
-            signerPublicKey: "HZ3Zed6HmpTPJd9uMcEHnfVCG9Gaio3Jj/Ru0Fu3NhA",
+            signerPublicKey: "YwahfUdUYehkGMaWh0+q3F8itx2h8mybjPmt8CmTJSs",
             eventId: "5074edf5-f079-4099-b036-22223c0c6995",
           },
         ],
@@ -39,7 +41,7 @@ async function main(): Promise<void> {
         .querySelector<HTMLButtonElement>("#authenticate")!
         .setAttribute("disabled", "true");
       try {
-        const proof = await z?.gpc.prove(req.schema);
+        const proof = await z?.gpc.prove({ request: req.schema, collectionIds: ["Tickets"] });
         console.log(proof);
         document
           .querySelector<HTMLButtonElement>("#authenticate")!
